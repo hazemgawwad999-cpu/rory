@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Hazrm to Rory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="audioToggle" class="audio-toggle" aria-label="Mute background music" aria-pressed="false" title="Mute / Unmute">
+    <span id="audioIcon" aria-hidden="true">♪</span>
+  </button>
+
+  <main class="scene" aria-live="polite">
+    <section class="intro" id="introSection">
+      <button id="heartTrigger" class="heart-trigger" aria-label="Open romantic reveal">
+        <div class="heart-shell">
+          <div class="heart-half heart-left" aria-hidden="true">
+            <svg viewBox="0 0 100 90" class="heart-shape" role="img" aria-label="Heart">
+              <path d="M50 84s-9.75-8.87-20.2-18.51C16.06 52.3 5 41.55 5 26.5 5 14.42 14.42 5 26.5 5c8.61 0 16.13 4.97 20 12.2C50.37 9.97 57.89 5 66.5 5 78.58 5 88 14.42 88 26.5c0 15.05-11.06 25.8-24.8 38.99C59.75 75.13 50 84 50 84z" />
+            </svg>
+          </div>
+          <div class="heart-half heart-right" aria-hidden="true">
+            <svg viewBox="0 0 100 90" class="heart-shape" role="img" aria-label="Heart">
+              <path d="M50 84s-9.75-8.87-20.2-18.51C16.06 52.3 5 41.55 5 26.5 5 14.42 14.42 5 26.5 5c8.61 0 16.13 4.97 20 12.2C50.37 9.97 57.89 5 66.5 5 78.58 5 88 14.42 88 26.5c0 15.05-11.06 25.8-24.8 38.99C59.75 75.13 50 84 50 84z" />
+            </svg>
+          </div>
+          <p class="heart-text">from hazem to rory</p>
+        </div>
+      </button>
+    </section>
+
+    <section id="messageSection" class="message-section" aria-hidden="true">
+      <h1 class="romantic-title" id="nameContainer" aria-label="Rory"></h1>
+      <article class="message-card">
+        <p>
+          In every quiet moment, your name feels like a soft light in my heart.
+          This little page is only a gentle way to say: with you, even silence turns beautiful.
+        </p>
+      </article>
+    </section>
+
+    <section id="photoSection" class="photo-section" aria-hidden="true">
+      <figure class="photo-frame">
+        <img
+          src="./IMG_0603.JPG"
+          alt="A cherished memory"
+          id="romanticPhoto"
+        />
+      </figure>
+      <button id="readMoreBtn" class="read-more-btn" type="button">Read More</button>
+    </section>
+  </main>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+
+  <div id="modalOverlay" class="modal-overlay" aria-hidden="true">
+    <section class="letter-modal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button id="closeModalBtn" class="close-modal" aria-label="Close letter">×</button>
+      <h2 id="letterTitle">A Little Longer Letter</h2>
+      <p>
+        You are the calm in my chaos, the warmth in my winters, and the spark in my ordinary days.
+        Every smile of yours feels like a promise that life can still be gentle and bright.
+      </p>
+      <p>
+        If love is made of moments, then mine are quietly stitched with your name — Rory.
+        Thank you for existing exactly as you are.
+      </p>
+    </section>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="./Video Project.m4a" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
